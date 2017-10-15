@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+ [y] hybris Platform
+
+ Copyright (c) 2017 SAP SE or an SAP affiliate company.  All rights reserved.
+
+ This software is the confidential and proprietary information of SAP
+ ("Confidential Information"). You shall not disclose such Confidential
+ Information and shall use it only in accordance with the terms of the
+ license agreement you entered into with SAP.
+--><extensioninfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="extensioninfo.xsd">
+
+	<extension abstractclassprefix="Generated" classprefix="Mondelezsecureportal" description="mondelezsecureportal extension" managername="MondelezsecureportalManager" managersuperclass="de.hybris.platform.jalo.extension.Extension" name="mondelezsecureportal">
+
+		<!-- you should add all required extensions to this list, except platform extensions which are automatically required -->
+      <requires-extension name="addonsupport"/>
+		<requires-extension name="acceleratorstorefrontcommons"/>
+      <requires-extension name="b2bacceleratorfacades"/>
+		<requires-extension name="cms2"/>
+		<requires-extension name="cms2lib"/>
+		<requires-extension name="cockpit"/>
+
+		<coremodule generated="true" manager="com.mondelez.secureportal.jalo.MondelezsecureportalManager" packageroot="com.mondelez.secureportal"/>
+		<webmodule jspcompile="false" webroot="/mondelezsecureportal"/>
+		<meta key="backoffice-module" value="true"/>
+		
+	</extension>
+
+</extensioninfo>
